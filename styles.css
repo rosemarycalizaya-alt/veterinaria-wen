@@ -1,5 +1,6 @@
 :root { --bg:#faf8f1; --surface:#ffffff; --text:#253e32; --muted:#647368; --green:#315b42; --soft:#eaf0df; --border:#dce2d5; }
 * { box-sizing:border-box; }
+body.oscuro { --bg:#19271f; --surface:#24382c; --text:#edf1e8; --muted:#b8c5b8; --green:#476f50; --soft:#2d4333; --border:#405345; color-scheme:dark; }
 html { scroll-behavior:smooth; scroll-padding-top:24px; }
 body { margin:0; background:var(--bg); color:var(--text); font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:1.5; }
 a { color:inherit; text-decoration:none; }
