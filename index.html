@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Patitas, un proyecto de sitio veterinario dedicado al bienestar de perros y gatos.">
+  <title>Patitas | Clínica veterinaria</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="#inicio" aria-label="Patitas, inicio"><span class="brand-icon" aria-hidden="true">✚</span> patitas<span class="brand-caption">CLÍNICA VETERINARIA</span></a>
+    <nav aria-label="Navegación principal">
+      <ul><li><a href="#servicios">Servicios</a></li><li><a href="#nosotros">Nosotros</a></li><li><a href="#contacto">Contacto</a></li></ul>
+    </nav>
+    <button id="btn-tema" class="theme-button" type="button" aria-pressed="false">Modo oscuro</button>
+  </header>
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">PEQUEÑAS PATITAS. GRANDES COMPAÑEROS.</p>
+        <h1>Su bienestar,<br>nuestra <em>vocación.</em></h1>
+        <p class="intro">Porque son parte de tu familia. Un espacio pensado para cuidar a tu mejor amigo, con cariño en cada consulta.</p>
+        <a class="button" href="#contacto">Hablemos de tu mascota <span aria-hidden="true">↗</span></a>
+        <p class="hero-note">Cuidado y compañía en cada etapa de su vida.</p>
+      </div>
+      <div class="hero-art" role="img" aria-label="Ilustración de un perro y un gato juntos">
+        <span class="art-label">EN BUENAS MANOS ♡</span>
+        <svg viewBox="0 0 480 420" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="240" cy="215" r="164" fill="#d9e7bd"/>
+          <path d="M70 360Q240 330 420 360" stroke="#688969" stroke-width="3" fill="none"/>
+          <path d="M110 350Q90 240 135 202L237 205Q278 270 252 350" fill="#c28a59"/>
+          <path d="M133 137Q98 119 86 165L98 238Q126 264 145 200M216 135Q263 121 272 166L260 234Q238 260 218 199" fill="#835838"/>
+          <rect x="125" y="123" width="112" height="136" rx="52" fill="#e3b786"/>
+          <ellipse cx="181" cy="218" rx="37" ry="29" fill="#f5ddba"/>
+          <circle cx="154" cy="181" r="7" fill="#283a30"/><circle cx="210" cy="181" r="7" fill="#283a30"/>
+          <path d="M170 207Q181 199 192 207L181 220Z" fill="#283a30"/>
+          <path d="M181 221v9m-13 0q13 13 26 0" stroke="#283a30" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M127 257Q180 279 233 257" stroke="#446952" stroke-width="13" fill="none"/><circle cx="180" cy="275" r="10" fill="#f4c864"/>
+          <path d="M133 305L130 350M227 305L230 350" stroke="#f5ddba" stroke-width="27" stroke-linecap="round"/>
+          <path d="M293 346Q245 292 283 248L355 248Q392 293 367 350" fill="#f5efe2"/>
+          <path d="M281 216L278 163L313 187L343 187L375 162L374 223Q365 269 328 269Q287 265 281 216" fill="#f5efe2"/>
+          <path d="M285 179L286 204L302 191M366 179L351 191L367 204" fill="#d7af9c"/>
+          <path d="M302 218l10 3m33 0l10-3" stroke="#283a30" stroke-width="5" stroke-linecap="round"/>
+          <path d="M322 235h12l-6 6Z" fill="#bb826e"/><path d="M328 241v7m-10 0q10 8 20 0" stroke="#283a30" stroke-width="2" fill="none"/>
+          <path d="M291 236l-29-5m29 13l-28 4m99-12l28-5m-28 13l28 4" stroke="#688969" stroke-width="2"/>
+          <path d="M368 330Q424 321 409 284" stroke="#f5efe2" stroke-width="18" fill="none" stroke-linecap="round"/>
+          <path d="M304 310v39m44-39v39" stroke="#e4ded1" stroke-width="16" stroke-linecap="round"/>
+          <path d="M65 101v24m-12-12h24M403 114v18m-9-9h18" stroke="#446952" stroke-width="4" stroke-linecap="round"/>
+          <path d="M349 83c-18-20-39 7 0 30 39-23 18-50 0-30" fill="#d38d73"/>
+        </svg>
+        <span class="art-footer">PARA ELLOS, TODO EL CARIÑO.</span>
+      </div>
+    </section>
+    <section id="servicios" class="services">
+      <div class="section-heading"><div><p class="eyebrow">CUIDADO QUE ACOMPAÑA</p><h2>Para cada etapa de su vida.</h2></div><p>Conoce las áreas de atención<br>de nuestra propuesta veterinaria.</p></div>
+      <div class="cards">
+        <article class="card"><span class="service-icon" aria-hidden="true">✚</span><h3>Consulta general</h3><p>Evaluación del estado de salud y orientación para el cuidado diario de tu perro o gato.</p><span class="card-footer">BIENESTAR DESDE EL PRIMER DÍA</span></article>
+        <article class="card"><span class="service-icon" aria-hidden="true">♡</span><h3>Cuidado preventivo</h3><p>Orientación sobre vacunación, desparasitación y controles según las necesidades de cada mascota.</p><span class="card-footer">PREVENIR ES CUIDAR</span></article>
+        <article class="card"><span class="service-icon" aria-hidden="true">✧</span><h3>Higiene y bienestar</h3><p>Cuidados de higiene y recomendaciones para que tu compañero se sienta cómodo y feliz.</p><span class="card-footer">CARIÑO EN CADA DETALLE</span></article>
+      </div>
+    </section>
+    <section id="nosotros" class="about"><p class="eyebrow">EL CORAZÓN DE PATITAS</p><h2>Nos gustan los animales.<br>Nos importa su familia.</h2><p>Creemos en una atención cercana, en escuchar tus dudas y en explicar cada cuidado con claridad. Este sitio es un proyecto académico de una clínica veterinaria; el nombre y los servicios son ilustrativos.</p></section>
+    <section id="contacto" class="contact">
+      <div><p class="eyebrow">ESTAMOS PARA ESCUCHARTE</p><h2>Cuéntanos sobre<br>tu mejor amigo.</h2><p>Deja tu consulta en el formulario.</p><div class="contact-note"><strong>Formulario de demostración</strong><p>No envía ni guarda datos. Los datos de contacto y horarios de la clínica están por confirmar.</p></div></div>
+      <form id="form-contacto">
+        <div class="form-row"><div><label for="nombre">Tu nombre</label><input id="nombre" name="nombre" autocomplete="name" placeholder="¿Cómo te llamas?" required></div><div><label for="mascota">Nombre de tu mascota</label><input id="mascota" name="mascota" placeholder="Tu compañero"></div></div>
+        <label for="correo">Correo electrónico</label><input id="correo" name="correo" type="email" autocomplete="email" placeholder="nombre@ejemplo.com" required>
+        <label for="mensaje">Tu mensaje</label><textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos cómo podemos ayudarte…" required></textarea>
+        <button class="button" type="submit">Enviar mensaje <span aria-hidden="true">↗</span></button>
+        <p id="estado-formulario" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer><a class="footer-brand" href="#inicio">✚ patitas</a><p>Hecho con cariño, para quienes nos dan tanto.</p><span>Proyecto académico · 2026</span></footer>
+</body>
+</html>
+
