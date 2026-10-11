@@ -56,4 +56,25 @@ textarea { resize:vertical; }
 footer { border-top:1px solid var(--border); padding:25px 32px; display:flex; justify-content:space-between; align-items:center; gap:20px; font-size:11px; color:var(--muted); }
 .footer-brand { font-size:22px; font-weight:700; color:var(--text); }
 
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+@media (max-width:850px) { .hero { gap:24px; } .contact { gap:35px; } .card { padding:20px; } }
+@media (max-width:600px) {
+  .header { flex-direction:column; padding:22px 20px; gap:18px; }
+  nav ul { flex-direction:column; gap:4px; }
+  nav a { padding:7px 18px; }
+  main { padding:0 20px; }
+  .hero { grid-template-columns:1fr; gap:32px; padding:38px 0; }
+  h1 { font-size:48px; }
+  h2 { font-size:32px; }
+  .hero-art { max-width:420px; width:100%; margin:auto; }
+  .section-heading { flex-direction:column; align-items:start; gap:8px; }
+  .cards, .about, .contact, .form-row { grid-template-columns:1fr; }
+  .services { padding:35px 0; }
+  .about { padding:28px 24px; gap:20px; }
+  .contact { gap:24px; padding:42px 0; }
+  footer { flex-direction:column; align-items:start; gap:8px; padding:24px 20px; }
+  footer p { margin:0; }
+}
+
+
 
