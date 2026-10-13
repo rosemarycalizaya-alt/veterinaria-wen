@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Servicios de Lavandería Burbujas">
+    <title>Lavanderia Burbujas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header id="inicio" class="encabezado">
+        <div class="contenedor barra-superior">
+            <h1>Lavanderia Burbujas</h1>
+
+            <nav aria-label="Navegación principal">
+                <ul class="menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#lavados">Nuestros lavados</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contenedor contenido">
+
+        <section id="lavados" class="tarjeta">
+            <h2>Nuestros lavados</h2>
+
+            <p>
+                En Lavandería Burbujas cuidamos tu ropa
+                con dedicación, limpieza y precios accesibles.
+            </p>
+
+            <ul class="servicios">
+                <li>
+                    <span>Lavado por kilo</span>
+                    <strong>Bs 15</strong>
+                </li>
+                <li>
+                    <span>Planchado de camisa</span>
+                    <strong>Bs 8</strong>
+                </li>
+                <li>
+                    <span>Lavado de edredón</span>
+                    <strong>Bs 35</strong>
+                </li>
+            </ul>
+        </section>
+
+        <section id="contacto" class="tarjeta">
+            <h2>Deja tu encargo</h2>
+
+            <p>
+                Completa el formulario para registrar
+                tu encargo en nuestra lavandería.
+            </p>
+
+            <form id="formulario-encargo">
+
+                <label for="nombre">Nombre completo</label>
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Escribe tu nombre"
+                    required
+                >
+
+                <label for="correo">Correo electrónico</label>
+                <input
+                    type="email"
+                    id="correo"
+                    name="correo"
+                    placeholder="ejemplo@correo.com"
+                    required
+                >
+
+                <label for="encargo">Tu encargo</label>
+                <textarea
+                    id="encargo"
+                    name="encargo"
+                    rows="3"
+                    placeholder="¿Qué prendas deseas lavar?"
+                ></textarea>
+
+            </form>
+
+            <button type="button" id="btn-confirmar">
+                Confirmar encargo
+            </button>
+
+            <p id="mensaje" class="oculto confirmacion"></p>
+
+        </section>
+
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="contenedor">
+            <p>
+                Parcial 1 - Rosemary Cotaña Calizaya -
+                12 de octubre de 2026
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

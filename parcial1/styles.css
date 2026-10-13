@@ -1,0 +1,220 @@
+
+/* Paleta de tres colores */
+:root {
+    --azul: #163c64;
+    --turquesa: #16a6a3;
+    --blanco: #ffffff;
+}
+
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--blanco);
+    color: var(--azul);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+/* Contenedor centrado */
+.contenedor {
+    width: calc(100% - 32px);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Encabezado */
+.encabezado {
+    background: var(--azul);
+    color: var(--blanco);
+}
+
+.barra-superior {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 22px 0;
+}
+
+h1 {
+    font-size: 1.65rem;
+    margin: 0;
+}
+
+/* Menú de navegación */
+.menu {
+    display: flex;
+    gap: 18px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* Contenido principal */
+.contenido {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: start;
+    gap: 24px;
+    padding: 36px 0;
+}
+
+/* Tarjetas */
+.tarjeta {
+    padding: 25px;
+    border: 2px solid var(--turquesa);
+    border-radius: 14px;
+    background: var(--blanco);
+    box-shadow: 0 5px 16px rgba(22, 60, 100, 0.08);
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 1.4rem;
+}
+
+/* Lista de servicios */
+.servicios {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+.servicios li {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--turquesa);
+}
+
+.servicios strong {
+    white-space: nowrap;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 11px 12px;
+    margin-bottom: 7px;
+    font: inherit;
+    color: var(--azul);
+    border: 1px solid var(--azul);
+    border-radius: 7px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid var(--turquesa);
+}
+
+/* Botón */
+button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px 18px;
+    border: 0;
+    border-radius: 7px;
+    background: var(--turquesa);
+    color: var(--blanco);
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--azul);
+}
+
+/* Ocultar mensaje */
+.oculto {
+    display: none;
+}
+
+/* Mensaje de confirmación */
+.confirmacion {
+    padding: 12px;
+    margin: 16px 0 0;
+    border-left: 4px solid var(--turquesa);
+    background: rgba(22, 166, 163, 0.10);
+    font-weight: bold;
+}
+
+/* Pie de página */
+.pie-pagina {
+    padding: 18px 0;
+    background: var(--azul);
+    color: var(--blanco);
+    text-align: center;
+}
+
+.pie-pagina p {
+    margin: 0;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 700px) {
+
+    .barra-superior {
+        flex-direction: column;
+        text-align: center;
+        gap: 14px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .contenido {
+        grid-template-columns: 1fr;
+        padding: 22px 0;
+        gap: 18px;
+    }
+
+    .tarjeta {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+}
