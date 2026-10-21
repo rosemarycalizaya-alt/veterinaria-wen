@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salteneria El Horno</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="contenedor">
+    <header>
+      <p class="etiqueta">Hechas con cariño, servidas calentitas</p>
+      <h1>Salteneria El Horno</h1>
+      <p>Bienvenido a nuestra salteñería. Hacé tu pedido y disfrutá de nuestras salteñas recién horneadas.</p>
+    </header>
+
+    <main>
+      <section class="tarjeta" aria-labelledby="titulo-pedido">
+        <h2 id="titulo-pedido">Hacé tu pedido</h2>
+        <form id="form-horno" novalidate method="POST" action="procesar.php">
+          <div class="campo">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" required autocomplete="name" placeholder="Escribí tu nombre">
+          </div>
+
+          <div class="campo">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" required autocomplete="email" placeholder="ejemplo@correo.com">
+          </div>
+
+          <div class="campo">
+            <label for="pedido">Qué saltenas querés</label>
+            <textarea id="pedido" name="pedido" rows="4" placeholder="Contanos qué querés pedir (opcional)"></textarea>
+          </div>
+
+          <button type="submit">Hacer mi pedido</button>
+          <p id="aviso-horno" class="aviso" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer>Parcial 2 - Rosemary Cotaña Calizaya - 20 de octubre de 2026</footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

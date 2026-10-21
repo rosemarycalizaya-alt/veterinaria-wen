@@ -1,0 +1,31 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #35251c;
+  background: #fff7ed;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+.contenedor { max-width: 700px; margin: 0 auto; padding: 32px 20px; }
+header { text-align: center; margin-bottom: 28px; }
+.etiqueta { color: #a44d1d; font-size: 0.85rem; font-weight: bold; letter-spacing: 0.06em; text-transform: uppercase; }
+h1 { margin: 8px 0 12px; color: #913b19; font-size: clamp(1.9rem, 5vw, 2.6rem); }
+header p:last-child { color: #675348; line-height: 1.5; }
+.tarjeta { background: #fff; border: 1px solid #f0dac7; border-radius: 16px; padding: 30px; box-shadow: 0 12px 30px rgba(90, 42, 15, 0.08); }
+h2 { margin: 0 0 22px; color: #62391f; font-size: 1.3rem; }
+.campo { margin-bottom: 20px; }
+label { display: block; margin-bottom: 8px; font-weight: bold; }
+input, textarea { width: 100%; padding: 12px 14px; border: 1px solid #cbb8a9; border-radius: 8px; font: inherit; background: #fff; }
+input:focus, textarea:focus { outline: 2px solid #b7672d; outline-offset: 1px; }
+textarea { resize: vertical; }
+button, .volver { display: inline-block; border: 0; border-radius: 8px; background: #a94d21; color: white; padding: 13px 22px; font: inherit; font-weight: bold; cursor: pointer; text-decoration: none; }
+button:hover, .volver:hover { background: #853917; }
+.aviso { display: none; margin: 14px 0 0; font-weight: bold; }
+.aviso.error { display: block; color: #b42318; }
+.aviso.exito { display: block; color: #217a36; }
+footer { margin-top: 26px; text-align: center; font-size: 0.85rem; color: #745f53; }
+.resultado h1 { font-size: 1.9rem; }
+.resultado h2 { margin: 24px 0 12px; }
+.resultado p { line-height: 1.6; overflow-wrap: anywhere; }
+.resultado li { margin: 10px 0; }
+.firma { margin: 24px 0; font-weight: bold; color: #913b19; }
+@media (max-width: 480px) { .contenedor { padding: 20px 14px; } .tarjeta { padding: 22px 18px; } }
